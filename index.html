@@ -12,12 +12,45 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<style>
+			div{
+				margin:20px auto
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				
+				<section data-background-image="gmt.jpg" data-background-size="contain">
+				</section>
+				<section>
+					<h1>Welcome to GMT</h1>
+					<h2>math course</h2>
+				</section>
+				<section>
+					<section>
+						<h1>${x^2}\over{(x^2-1)}$</h1>
+					</section>
+					<section>
+						<div>
+							<span class="fragment">${x^2}\over{(x+1)(x-1)}$ =</span>
+							<span class="fragment">${a}\over{x+1}$ <span class="fragment">+ </span></span>
+							<span class="fragment">${b}\over{x-1}$</span>
+						</div>
+						<div>
+							<span class="fragment">${\red{(x+1)(x-1)}.x^2}\over{\red{(x+1)(x-1)}}$ =</span>
+							<span class="fragment">${\green{(x+1)}(x-1).a}\over\green{x+1}$ <span class="fragment"> + </span></span>
+							<span class="fragment">${(x+1)\orange{(x-1)}.b}\over{\orange{x-1}}$</span>
+						</div>
+						<div>
+							<span class="fragment">$x^2$ =</span>
+							<span class="fragment">$(x-1).a$ <span class="fragment">+ </span></span>
+							<span class="fragment">$(x+1).b$</span>
+						</div>
+					</section>
+				</section>
+				
 			</div>
 		</div>
 
@@ -36,5 +69,6 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+		<script src="plugin/math-katex/math-katex.js" async></script>
 	</body>
 </html>
